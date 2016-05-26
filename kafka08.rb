@@ -1,18 +1,9 @@
-class Kafka0822 < Formula
+class Kafka08 < Formula
   desc "Publish-subscribe messaging rethought as a distributed commit log"
   homepage "https://kafka.apache.org"
   url "http://mirrors.ibiblio.org/apache/kafka/0.8.2.2/kafka-0.8.2.2-src.tgz"
   mirror "https://archive.apache.org/dist/kafka/0.8.2.2/kafka-0.8.2.2-src.tgz"
   sha256 "77e9ed27c25650c07d00f380bd7c04d6345cbb984d70ddc52bbb4cb512d8b03c"
-
-  head "https://git-wip-us.apache.org/repos/asf/kafka.git", :branch => "trunk"
-
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "881db94838f291a09fef3d7070c4e99865eccb16f84e8447777a65cc14e0a180" => :el_capitan
-    sha256 "e07789b42a964353d49fdd4402f502c9803044e0477fcd0da6dad14b26b4c20d" => :yosemite
-    sha256 "1e57ab9774f8adee9f08c941eabdc029955b6ea43c4bc109b6420e74a515f08c" => :mavericks
-  end
 
   depends_on "gradle"
   depends_on "zookeeper"

@@ -101,7 +101,7 @@ class Kafka0822 < Formula
   end
 
   test do
-     ohai "Ensuring the Kafka 0.8.2.2 JAR exists in the right place"
-    assert File.exists? libexec/"core/build/libs/kafka_2.10-0.8.2.2.jar"
+    ohai "Ensuring the Kafka 0.8.2.2 JAR exists in the right place"
+    assert File.exist? libexec/"core/build/libs/kafka_2.10-0.8.2.2.jar"
   end
 end
